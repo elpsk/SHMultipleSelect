@@ -11,6 +11,9 @@
 
 @interface SHViewController : UIViewController<SHMultipleSelectDelegate> {
     UIButton *_btn;
+    UIButton *_btn2;
+    UIButton *_btn3;
+
     NSMutableArray *_dataSource;
 }
 

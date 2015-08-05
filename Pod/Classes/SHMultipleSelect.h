@@ -28,11 +28,22 @@
     UIButton* _doneBtn;
     UIView* _btnsSeparator;
     UIView* _coverView;
+    UIView* _headerView;
+    UILabel* _headerLabelView;
+
+    BOOL _showHeader;
+    BOOL _singleOption;
 }
 
 @property (nonatomic, assign) id<SHMultipleSelectDelegate> delegate;
 @property (nonatomic, assign) NSInteger rowsCount;
 
+@property (nonatomic, assign) BOOL canCloseWithoutSelection;
+@property (nonatomic, assign) BOOL showCancelButton;
+@property (nonatomic, assign) BOOL showDoneButton;
+
 - (void)show;
+- (void)showWithHeader:(NSString*)pHeader;
+- (void)showWithHeader:(NSString*)pHeader optionSingle:(BOOL)pSingle;
 
 @end
