@@ -9,7 +9,7 @@ SHMultipleSelect is an easy-to-use multiple selection view for iOS 7+.
 Created by Shamsiddin
 https://www.linkedin.com/in/shamsiddin
 
-*Addons* by **Alberto Pasca** ( https://goo.gl/dNtrFn )
+*Addons* by **Alberto Pasca** ( http://www.albertopasca.it/ )
 
 ## Usage
 
