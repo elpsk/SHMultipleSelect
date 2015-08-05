@@ -2,10 +2,14 @@
 
 SHMultipleSelect is an easy-to-use multiple selection view for iOS 7+.
 
-<a href="url"><img src="ScreenShots/shmultipleselect.png" align="center" width="320" height="568" ></a>
+<a href="url"><img src="ScreenShots/main.png" align="center" width="200" height="400" ></a>
+<a href="url"><img src="ScreenShots/shsingleheaderselect.png" align="center" width="200" height="400" ></a>
+<a href="url"><img src="ScreenShots/shmultipleselect.png" align="center" width="200" height="400" ></a>
 
 Created by Shamsiddin
 https://www.linkedin.com/in/shamsiddin
+
+*Addons* by **Alberto Pasca** ( https://goo.gl/dNtrFn )
 
 ## Usage
 
@@ -22,7 +26,7 @@ https://www.linkedin.com/in/shamsiddin
 ```
 
 ```objective-c
-#pragma mark - SHMultipleSelectDelegate
+//pragma mark - SHMultipleSelectDelegate
 
 - (void)multipleSelectView:(SHMultipleSelect *)multipleSelectView clickedBtnAtIndex:(NSInteger)clickedBtnIndex withSelectedIndexPaths:(NSArray *)selectedIndexPaths {
     if (clickedBtnIndex == 1) { // Done btn
@@ -43,6 +47,26 @@ https://www.linkedin.com/in/shamsiddin
     }
     return canSelect;
 }
+```
+
+#Addons
+```objective-c
+
+	// done button enabled without select items
+	@property (nonatomic, assign) BOOL canCloseWithoutSelection;
+	
+	// show / hide DONE button
+	@property (nonatomic, assign) BOOL showCancelButton;
+	
+	// show / hide DONE button
+	@property (nonatomic, assign) BOOL showDoneButton;
+	
+	// init with HEADER and text
+  - (void)showWithHeader:(NSString*)pHeader;
+	
+  // init with HEADER and text and DISABLE multiple selection
+  - (void)showWithHeader:(NSString*)pHeader optionSingle:(BOOL)pSingle;
+  
 ```
 
 ##ARC
